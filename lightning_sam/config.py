@@ -16,7 +16,7 @@ config = {
     },
     "model": {
         "type": 'vit_h',
-        "checkpoint": "sam_vit_h_4b8939.pth",
+        "checkpoint": "/content/drive/MyDrive/sam_cp/sam_vit_h_4b8939 (1).pth",
         "freeze": {
             "image_encoder": True,
             "prompt_encoder": True,
@@ -25,12 +25,12 @@ config = {
     },
     "dataset": {
         "train": {
-            "root_dir": "/coco/coco2017/train2017",
-            "annotation_file": "/coco/coco2017/annotations/instances_train2017.json"
+            "root_dir": "/content/drive/MyDrive/coco-training/datasets/train",
+            "annotation_file": "/content/drive/MyDrive/coco-training/SAM Model-2.json"
         },
         "val": {
-            "root_dir": "/coco/coco2017/val2017",
-            "annotation_file": "/coco/coco2017/annotations/instances_val2017.json"
+            "root_dir": "/content/drive/MyDrive/coco-training/datasets/test",
+            "annotation_file": "/content/drive/MyDrive/coco-training/test-3.json"
         }
     }
 }
