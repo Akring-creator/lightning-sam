@@ -3,9 +3,9 @@ from box import Box
 config = {
     "num_devices": 1,
     "batch_size": 12,
-    "num_workers": 4,
-    "num_epochs": 100,
-    "eval_interval": 10,
+    "num_workers": 2,
+    "num_epochs": 505,
+    "eval_interval": 100,
     "out_dir": "out/training",
     "opt": {
         "learning_rate": 8e-4,
