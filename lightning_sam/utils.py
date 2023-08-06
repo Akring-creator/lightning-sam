@@ -79,7 +79,7 @@ def visualize(cfg: Box):
             point_coords=None,
             point_labels=None,
             boxes=transformed_boxes,
-            multimask_output=False,
+            multimask_output=True,
         )
         image_output = draw_image(image, masks.squeeze(1), boxes=None, labels=None)
         cv2.imwrite(image_output_path, image_output)
