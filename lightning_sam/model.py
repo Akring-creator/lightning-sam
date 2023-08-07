@@ -40,7 +40,7 @@ class Model(nn.Module):
                 image_pe=self.model.prompt_encoder.get_dense_pe(),
                 sparse_prompt_embeddings=sparse_embeddings,
                 dense_prompt_embeddings=dense_embeddings,
-                multimask_output=True,
+                multimask_output=False,
             )
 
             masks = F.interpolate(
